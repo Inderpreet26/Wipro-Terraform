@@ -1,0 +1,11 @@
+output "vpc_id"                 { value = module.vpc.vpc_id }
+output "internet_gateway_id"    { value = module.internet_gateway.igw_id }
+output "elastic_ip"             { value = module.elastic_ip.eip_id }
+output "nat_gateway_id"         { value = module.nat_gateway.nat_gw_id }
+output "public_subnet_id"       { value = module.public_subnet.subnet_id }
+output "private_subnet_id"      { value = module.private_subnet.subnet_id }
+output "public_route_table_id"  { value = module.public_route_table.route_table_id }
+output "private_route_table_id" { value = module.private_route_table.route_table_id }
+output "security_group_id"      { value = module.security_group.sg_id }
+output "ec2_instance_id"        { value = module.ec2.instance_id }
+output "ec2_public_ip"          { value = module.ec2.public_ip }
